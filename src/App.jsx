@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { HashRouter, Routes, Route, NavLink } from 'react-router-dom';
 import DepressionPage from './pages/DepressionPage.jsx';
 import AnxietyPage from './pages/AnxietyPage.jsx';
 import MetricsPage from './pages/MetricsPage.jsx';
@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-shell">
         <header className="app-header">
           <div className="brand">
@@ -75,7 +75,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
